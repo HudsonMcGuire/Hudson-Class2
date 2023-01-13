@@ -37,7 +37,7 @@ export default function Counter() {
         <div className={styles.description}>
           <p>
             COUNTER PAGE&nbsp;
-            <code className={styles.code}>Welcome {isUser} </code>
+            <code className={styles.code}>Hello {isUser} </code>
           </p>
           <div>
             <a
@@ -45,48 +45,27 @@ export default function Counter() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
+              Made By Hudson
             </a>
           </div>
         </div>
+        
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
+
+      
+        
 
         <div className={styles.grid}>
           <h2>
-             The Number is:
+             Days Without Incident:
           </h2>
-          <p>
+          <p2>
               {number}
-          </p>
-          <button onClick={() => setNumber(number + 1)}>Increment</button>
-          <button onClick={() => setNumber(number - 1)}>Decrement</button>
+          </p2>
+    
+          <button class="add" onClick={() => setNumber(number + 1)}>Add</button>
+          <button class="reset" onClick={() => setNumber(0)}>Reset</button>
+         
         </div>
       </main>
     </>
